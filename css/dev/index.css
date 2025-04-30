@@ -215,7 +215,8 @@ body {
 }
 .component__items {
   display: flex;
-  column-gap: 0.625rem;
+  flex-wrap: wrap;
+  gap: 0.625rem;
 }
 .component__item {
   border-radius: 8.2830625rem;
@@ -377,17 +378,22 @@ body {
   flex-basis: 33.5rem;
   border-radius: 1.3125rem;
 }
+.bot__img img {
+  border-radius: 1.3125rem;
+}
 .bot__component {
   flex-basis: 29.75rem;
 }
 
 .bitrix__component {
   flex-basis: 29.75rem;
-  padding-inline-start: 4.625rem;
 }
 .bitrix__img {
   border-radius: 1.3125rem;
   flex-basis: 33.5rem;
+}
+.bitrix__img img {
+  border-radius: 1.3125rem;
 }
 
 .investment__component {
@@ -396,6 +402,9 @@ body {
 .investment__img {
   border-radius: 1.3125rem;
   flex-basis: 33.5rem;
+}
+.investment__img img {
+  border-radius: 1.3125rem;
 }
 
 .social__container {
@@ -641,4 +650,8 @@ body {
 @media (max-width: 31.125em) {
   .button {
     flex-grow: 1;
+  }}
+@media (min-width: 38.25em) {
+  .bitrix__component {
+    padding-inline-start: 4.625rem;
   }}
